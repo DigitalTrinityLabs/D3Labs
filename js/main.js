@@ -24,7 +24,6 @@
 			var current = elem.item.index;
 			$(elem.target).find(".owl-item").eq(current).find(".to-animate").removeClass('fadeInUp animated');
 			$(elem.target).find(".owl-item").eq(current).find(".to-animate-2").removeClass('fadeInUp animated');
-
 		});
 		owl.on('initialized.owl.carousel changed.owl.carousel',function(elem){
 			setTimeout(function(){
@@ -38,7 +37,7 @@
      	});
 		owl.owlCarousel({
 			items: 1,
-		    loop: true,
+		    loop: false,
 		    margin: 0,
 		    responsiveClass: true,
 		    nav: true,
